@@ -13,6 +13,7 @@ export function mergeSeperateds(
   rootFiles.forEach((file) => {
     structure[file.fileName] = file.fileName;
   });
+
   // folder structure & hyerarchy
   files.forEach((file, fileIndex) => {
     let folderName = file.paths[0];
@@ -24,6 +25,8 @@ export function mergeSeperateds(
       }
     });
   });
+
+  // file structure & hyerarchy
   files.forEach((file, fileIndex) => {
     let folderName = file.paths[0];
     let lastChanged = structure[folderName];
@@ -42,8 +45,6 @@ export function mergeSeperateds(
             ...lastChanged[path],
           };
         } else {
-         // console.log("girdi", lastChanged[path], file.fileName);
-
           if (path == folderName) {
             structure[folderName] = {
               [file.fileName]: file.fileName,

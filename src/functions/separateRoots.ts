@@ -1,10 +1,14 @@
 import { FilesWithPaths, FileTreeObject } from "../types/types";
 
-
 export function separateRoots(
   filesWithPaths: FilesWithPaths[],
   foldersWithPaths: FilesWithPaths[]
-): { rootFolders: FilesWithPaths[]; rootFiles: FilesWithPaths[], files: FilesWithPaths[], folders: FilesWithPaths[]} {
+): {
+  rootFolders: FilesWithPaths[];
+  rootFiles: FilesWithPaths[];
+  files: FilesWithPaths[];
+  folders: FilesWithPaths[];
+} {
   let rootFolders: FilesWithPaths[] = [];
   let rootFiles: FilesWithPaths[] = [];
 
@@ -25,32 +29,7 @@ export function separateRoots(
     }
   });
 
-  files = files.filter((file) => file.paths.length >= 0)
-  folders = folders.filter((folder) => folder.paths.length >= 0)
+  files = files.filter((file) => file.paths.length >= 0);
+  folders = folders.filter((folder) => folder.paths.length >= 0);
   return { rootFolders, rootFiles, files, folders };
 }
-
-/*
-    example output:
-
-    {
-        "src": {
-            "commands": [
-              {
-                "Info": [
-                    "help.ts",
-                ],
-              },
-              {
-                "Login": [
-                    "insta.ts",
-                ],
-              }, 
-             {
-               "Metadata": [
-                    "github.ts",
-                    "insta.ts"
-                ]
-              }
-            }
-*/

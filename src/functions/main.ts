@@ -6,12 +6,12 @@ import { seperateFiles } from "./separateFiles";
 import { separatePaths } from "./separatePaths";
 import { separateRoots } from "./separateRoots";
 
-export async function Main(username: string, repository: string, branch: string = "master") : Promise<string> {
-  const data = await getRepository(
-    username,
-    repository,
-    branch
-  );
+export async function Main(
+  username: string,
+  repository: string,
+  branch: string = "master"
+): Promise<string> {
+  const data = await getRepository(username, repository, branch);
 
   const seperatedFiles = seperateFiles(data.tree);
 
@@ -24,7 +24,6 @@ export async function Main(username: string, repository: string, branch: string 
     setStructures.filesWithPaths as FilesWithPaths[],
     setStructures.foldersWithPaths as FilesWithPaths[]
   );
-  //console.log(roots);
 
   const mergeSeperated = mergeSeperateds(
     roots.files,
@@ -32,8 +31,7 @@ export async function Main(username: string, repository: string, branch: string 
     roots.rootFiles,
     roots.rootFolders
   );
-  //console.log(mergeSeperated);
 
   const makeATree = makeTree(mergeSeperated);
-    return makeATree;
+  return makeATree;
 }
