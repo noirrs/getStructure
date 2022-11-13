@@ -11,6 +11,7 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true,
+    "lib": ["es2021", "dom"],
     "skipLibCheck": true,
     "strictNullChecks": false,
     "noImplicitAny": false,
