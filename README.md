@@ -67,13 +67,13 @@ getstructure.noirs.me
 
 ## Resources
 
-Treeify: https://www.npmjs.com/package/treeify
+**Treeify**: https://www.npmjs.com/package/treeify
 
-NestJS: https://docs.nestjs.com/
+**NestJS**: https://docs.nestjs.com/
 
-Axios: https://www.npmjs.com/package/axios
+**Axios**: https://www.npmjs.com/package/axios
 
-Vercel: https://vercel.com/
+**Vercel**: https://vercel.com/
 
 
 ## Running the app
