@@ -14,10 +14,10 @@ POST
 getstructure.noirs.me 
 
 {
-	body: {
-		username: "Noirrs",
-		repository: "getStructure",
-		branch: "master"
+ body: {
+	 username: "Noirrs",
+	 repository: "getStructure",
+	 branch: "master"
 	}
 }
 
@@ -68,8 +68,11 @@ getstructure.noirs.me
 ## Resources
 
 Treeify: https://www.npmjs.com/package/treeify
+
 NestJS: https://docs.nestjs.com/
+
 Axios: https://www.npmjs.com/package/axios
+
 Vercel: https://vercel.com/
 
 
