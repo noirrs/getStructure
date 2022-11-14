@@ -24,7 +24,7 @@ export async function Main(
     setStructures.filesWithPaths as FilesWithPaths[],
     setStructures.foldersWithPaths as FilesWithPaths[]
   );
-
+    
   const mergeSeperated = mergeSeperateds(
     roots.files,
     roots.folders,
