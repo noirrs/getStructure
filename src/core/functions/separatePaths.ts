@@ -1,5 +1,5 @@
-import { FilesWithPaths } from "./../types/types.d";
-import { FileTreeObject } from "../types/types";
+import { FilesWithPaths } from "../../types";
+import { FileTreeObject } from "../../types";
 
 export function separatePaths(
   files: FileTreeObject[],

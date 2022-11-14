@@ -1,4 +1,4 @@
-import { FilesWithPaths } from "@/types/types";
+import { FilesWithPaths } from "@/types";
 import { getRepository } from "./getRepository";
 import { makeTree } from "./makeTree";
 import { mergeSeperateds } from "./mergeSeparateds";
@@ -24,7 +24,7 @@ export async function Main(
     setStructures.filesWithPaths as FilesWithPaths[],
     setStructures.foldersWithPaths as FilesWithPaths[]
   );
-    
+
   const mergeSeperated = mergeSeperateds(
     roots.files,
     roots.folders,

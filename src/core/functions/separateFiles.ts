@@ -1,4 +1,4 @@
-import { FileTreeObject } from "./../types/types.d";
+import { FileTreeObject } from "../../types";
 
 export function seperateFiles(fileTree: Array<any>): {
   folders: Array<FileTreeObject>;

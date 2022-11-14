@@ -1,4 +1,4 @@
-import { FileTreeObject } from "./../types/types.d";
+import { FileTreeObject } from "../../types";
 
 export function getFileNames(
   folders: Array<FileTreeObject>,

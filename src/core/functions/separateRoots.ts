@@ -1,4 +1,4 @@
-import { FilesWithPaths, FileTreeObject } from "../types/types";
+import { FilesWithPaths, FileTreeObject } from "../../types";
 
 export function separateRoots(
   filesWithPaths: FilesWithPaths[],
