@@ -1,7 +1,5 @@
 # 🚧 Get Structure 
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Noirrs/getStructure/tree/circleci-project-setup.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/Noirrs/getStructure/tree/circleci-project-setup)
-
 ### 🌀 Get Structure is an API that helps to get hierarchy (structure) of an github repository like tree command in bash
 
 
