@@ -1,6 +1,6 @@
 # 🚧 Get Structure 
 
-### 🌀 Get Structure is an API that helps to get hierarchy (structure) of an github repository like tree command in bash
+🌀 Get Structure is an API that helps to get hierarchy (structure) of an github repository like tree command in bash
 
 
 # ⚡Quick API Docs
