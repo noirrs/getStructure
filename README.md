@@ -9,7 +9,7 @@
 
 ```js 
 POST 
-getstructure.noirs.me 
+getstructure.noir.land
 
 {
  body: {
@@ -19,7 +19,7 @@ getstructure.noirs.me
 	}
 }
 
-* API endpoint: getstructure.noirs.me
+* API endpoint: getstructure.noir.land
 
 * username: Repository Author's github nickname
 * repository: Github Repository's name
